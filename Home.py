@@ -6,7 +6,16 @@ import plotly.express as px
 import sklearn
 
 
-st.set_page_config(layout="wide")
+custom_css = """
+<style>
+body {
+    zoom: 100%;
+}
+</style>
+"""
+st.markdown(custom_css, unsafe_allow_html=True)
+
+#st.set_page_config(layout="wide")
 st.header("Student Dropout Analysis")
 st.sidebar.title("Navigation")
 data = pd.read_csv("data/dataset.csv")
