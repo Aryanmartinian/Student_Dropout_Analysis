@@ -9,7 +9,7 @@ import sklearn
 st.set_page_config(layout="wide")
 st.header("Student Dropout Analysis")
 st.sidebar.title("Navigation")
-data = pd.read_csv("data\0dataset.csv")
+data = pd.read_csv("data/dataset.csv")
 if st.checkbox("Show Data"):
     st.write(data.head(100))
 
